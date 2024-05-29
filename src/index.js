@@ -4,17 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
-import { CurrentUserProvider,  } from "./contexts/CurrentUserContext";
+import { CurrentUserProvider } from "./contexts/CurrentUserContext";
 import { ProfileDataProvider } from "./contexts/ProfileDataContext";
 
 ReactDOM.render(
-    <Router>
-      <CurrentUserProvider>
-        <ProfileDataProvider>
+  <Router>
+    <CurrentUserProvider>
+      <ProfileDataProvider>
         <App />
-        </ProfileDataProvider>
-      </CurrentUserProvider>
-    </Router>,
+      </ProfileDataProvider>
+    </CurrentUserProvider>
+  </Router>,
   document.getElementById("root")
 );
 
